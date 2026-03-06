@@ -1,6 +1,5 @@
 'use client';
 
-import type { Metadata } from 'next';
 import Link from 'next/link';
 import { useTranslation } from '@/i18n/useTranslation';
 
@@ -13,10 +12,15 @@ export default function ServicesPage() {
       title: t.services.airport_title,
       icon: '✈️',
       description: t.services.airport_desc,
-      features: [t.services.feature_airport_24h, t.services.feature_airport_wait, t.services.feature_airport_childseat, t.services.feature_airport_luggage],
-      suitable: t.services.suitable_for,
+      features: [
+        t.services.feature_airport_24h,
+        t.services.feature_airport_wait,
+        t.services.feature_airport_childseat,
+        t.services.feature_airport_luggage,
+      ],
+      suitable: t.services.suitable_for_airport,
       priceFrom: '¥8,000',
-      vehicles: ['豪华轿车', '商务MPV', '豪华面包车'],
+      vehicles: [t.services.vehicle_sedan, t.services.vehicle_mpv, t.services.vehicle_van],
       link: '/services/airport',
     },
     {
@@ -24,10 +28,15 @@ export default function ServicesPage() {
       title: t.services.sightseeing_title,
       icon: '🗻',
       description: t.services.sightseeing_desc,
-      features: [t.services.feature_sightseeing_flex, t.services.feature_sightseeing_guide, t.services.feature_sightseeing_spots, t.services.feature_sightseeing_food],
-      suitable: t.services.suitable_for,
+      features: [
+        t.services.feature_sightseeing_flex,
+        t.services.feature_sightseeing_guide,
+        t.services.feature_sightseeing_spots,
+        t.services.feature_sightseeing_food,
+      ],
+      suitable: t.services.suitable_for_sightseeing,
       priceFrom: '¥25,000',
-      vehicles: ['商务MPV', '豪华面包车', '中型巴士'],
+      vehicles: [t.services.vehicle_mpv, t.services.vehicle_van, t.services.vehicle_bus],
       link: '/services/sightseeing',
     },
     {
@@ -35,10 +44,15 @@ export default function ServicesPage() {
       title: t.services.vip_title,
       icon: '💼',
       description: t.services.vip_desc,
-      features: ['专属司机', '商务车型', '保密协议', '灵活调度'],
-      suitable: t.services.suitable_for,
+      features: [
+        t.services.feature_vip_driver,
+        t.services.feature_vip_vehicle,
+        t.services.feature_vip_confidential,
+        t.services.feature_vip_flexible,
+      ],
+      suitable: t.services.suitable_for_vip,
       priceFrom: '¥35,000',
-      vehicles: ['豪华轿车', '商务MPV'],
+      vehicles: [t.services.vehicle_sedan, t.services.vehicle_mpv],
       link: '/services/vip',
     },
     {
@@ -46,10 +60,15 @@ export default function ServicesPage() {
       title: t.services.ski_title,
       icon: '⛷️',
       description: t.services.ski_desc,
-      features: ['雪具运输', '早晚接送', '多日套餐', '酒店直达'],
-      suitable: t.services.suitable_for,
+      features: [
+        t.services.feature_ski_gear,
+        t.services.feature_ski_pickup,
+        t.services.feature_ski_package,
+        t.services.feature_ski_hotel,
+      ],
+      suitable: t.services.suitable_for_ski,
       priceFrom: '¥30,000',
-      vehicles: ['商务MPV', '豪华面包车'],
+      vehicles: [t.services.vehicle_mpv, t.services.vehicle_van],
       link: '/services/sightseeing',
     },
     {
@@ -57,10 +76,15 @@ export default function ServicesPage() {
       title: t.services.custom_title,
       icon: '🎯',
       description: t.services.custom_desc,
-      features: ['完全定制', '专业规划', '弹性时间', '特殊需求'],
-      suitable: t.services.suitable_for,
+      features: [
+        t.services.feature_custom_fully,
+        t.services.feature_custom_planning,
+        t.services.feature_custom_flexible,
+        t.services.feature_custom_special,
+      ],
+      suitable: t.services.suitable_for_custom,
       priceFrom: t.services.price_from,
-      vehicles: ['全车型可选'],
+      vehicles: [t.services.vehicle_all],
       link: '/contact',
     },
     {
@@ -68,17 +92,21 @@ export default function ServicesPage() {
       title: t.services.photo_title,
       icon: '📸',
       description: t.services.photo_desc,
-      features: ['最佳拍摄点', '灵活停留', '日出日落', '季节推荐'],
-      suitable: t.services.suitable_for,
+      features: [
+        t.services.feature_photo_spots,
+        t.services.feature_photo_stay,
+        t.services.feature_photo_sunrise,
+        t.services.feature_photo_season,
+      ],
+      suitable: t.services.suitable_for_photo,
       priceFrom: '¥28,000',
-      vehicles: ['商务MPV', '豪华面包车'],
+      vehicles: [t.services.vehicle_mpv, t.services.vehicle_van],
       link: '/services/sightseeing',
     },
   ];
 
   return (
     <div>
-      {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary via-primary-light to-primary-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.services.page_title}</h1>
@@ -86,7 +114,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Services Grid */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -102,7 +129,7 @@ export default function ServicesPage() {
 
                 <div className="space-y-4 mb-6">
                   <div>
-                    <h3 className="font-semibold text-primary mb-2">服务特色</h3>
+                    <h3 className="font-semibold text-primary mb-2">{t.common.service_features}</h3>
                     <div className="grid grid-cols-2 gap-2">
                       {service.features.map((feature, idx) => (
                         <div key={idx} className="flex items-center text-sm text-gray-700">
@@ -145,7 +172,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Why Choose Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="section-title text-center">{t.services.guarantee_title}</h2>
@@ -168,7 +194,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-20 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">{t.services.help_title}</h2>

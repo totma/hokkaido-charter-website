@@ -7,66 +7,64 @@ export default function RoutesPage() {
 
   const routes = [
     {
-      name: '札幌市内观光',
-      duration: '6小时',
-      season: '全年',
-      highlights: '时计台、大通公园、白色恋人公园、场外市场',
-      price: '¥35,000起',
-      tag: '经典'
+      name: t.routes.route_sapporo,
+      duration: t.routes.route_sapporo_duration,
+      season: t.routes.route_sapporo_season,
+      highlights: t.routes.route_sapporo_highlights,
+      price: t.routes.route_sapporo_price,
+      tag: t.routes.tag_classic,
     },
     {
-      name: '小樽一日游',
-      duration: '8小时',
-      season: '全年',
-      highlights: '小樽运河、天狗山、堺町通、北一硝子馆',
-      price: '¥45,000起',
-      tag: '热门'
+      name: t.routes.route_otaru,
+      duration: t.routes.route_otaru_duration,
+      season: t.routes.route_otaru_season,
+      highlights: t.routes.route_otaru_highlights,
+      price: t.routes.route_otaru_price,
+      tag: t.routes.tag_popular,
     },
     {
-      name: '富良野·美瑛',
-      duration: '10小时',
-      season: '夏秋',
-      highlights: '四季彩之丘、青池、富田农场、拼布之路',
-      price: '¥60,000起',
-      tag: '季节限定'
+      name: t.routes.route_furano,
+      duration: t.routes.route_furano_duration,
+      season: t.routes.route_furano_season,
+      highlights: t.routes.route_furano_highlights,
+      price: t.routes.route_furano_price,
+      tag: t.routes.tag_seasonal,
     },
     {
-      name: '登别·洞爷湖',
-      duration: '10小时',
-      season: '全年',
-      highlights: '地狱谷、熊牧场、洞爷湖展望台、昭和新山',
-      price: '¥55,000起',
-      tag: '温泉'
+      name: t.routes.route_noboribetsu,
+      duration: t.routes.route_noboribetsu_duration,
+      season: t.routes.route_noboribetsu_season,
+      highlights: t.routes.route_noboribetsu_highlights,
+      price: t.routes.route_noboribetsu_price,
+      tag: t.routes.tag_onsen,
     },
     {
-      name: '二世古滑雪接送',
-      duration: '单程',
-      season: '冬季',
-      highlights: '新千岁机场 ↔ 二世古度假村',
-      price: '¥40,000起',
-      tag: '冬季'
+      name: t.routes.route_niseko,
+      duration: t.routes.route_niseko_duration,
+      season: t.routes.route_niseko_season,
+      highlights: t.routes.route_niseko_highlights,
+      price: t.routes.route_niseko_price,
+      tag: t.routes.tag_winter,
     },
     {
-      name: '旭川·旭山动物园',
-      duration: '10小时',
-      season: '全年',
-      highlights: '旭山动物园、旭川拉面村、雪之美术馆',
-      price: '¥58,000起',
-      tag: '亲子'
+      name: t.routes.route_asahikawa,
+      duration: t.routes.route_asahikawa_duration,
+      season: t.routes.route_asahikawa_season,
+      highlights: t.routes.route_asahikawa_highlights,
+      price: t.routes.route_asahikawa_price,
+      tag: t.routes.tag_family,
     }
   ];
 
   return (
     <div className="min-h-screen">
-      {/* Hero */}
       <section className="bg-gradient-to-r from-[#1B3A5C] to-[#2C5282] text-white py-20">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.routes?.page_title || '热门线路'}</h1>
-          <p className="text-xl opacity-90">{t.routes?.page_subtitle || '精选北海道经典路线，专业司机带您深度游览'}</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.routes.page_title}</h1>
+          <p className="text-xl opacity-90">{t.routes.page_subtitle}</p>
         </div>
       </section>
 
-      {/* Routes Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -83,15 +81,15 @@ export default function RoutesPage() {
                     <span className="text-gray-600 text-sm">{route.season}</span>
                   </div>
                   <div className="mb-4">
-                    <span className="font-semibold">{t.routes?.duration || '时长'}：</span>{route.duration}
+                    <span className="font-semibold">{t.routes.duration}：</span>{route.duration}
                   </div>
                   <div className="mb-4">
-                    <span className="font-semibold">{t.routes?.highlights || '主要景点'}：</span>
+                    <span className="font-semibold">{t.routes.highlights}：</span>
                     <p className="text-gray-600 mt-1">{route.highlights}</p>
                   </div>
                   <div className="text-2xl font-bold text-[#1B3A5C] mb-4">{route.price}</div>
                   <button className="w-full bg-[#1B3A5C] text-white py-2 rounded-lg hover:bg-[#2C5282] transition">
-                    {t.home?.view_details || '查看详情'}
+                    {t.home.view_details}
                   </button>
                 </div>
               </div>
@@ -100,13 +98,12 @@ export default function RoutesPage() {
         </div>
       </section>
 
-      {/* Custom Route CTA */}
       <section className="bg-gradient-to-r from-[#C4A35A] to-[#D4B36A] py-16">
         <div className="container mx-auto px-4 text-center text-white">
-          <h2 className="text-3xl font-bold mb-4">{t.routes?.custom_title || '没有找到合适的线路？'}</h2>
-          <p className="text-xl mb-8">{t.routes?.custom_subtitle || '我们提供完全定制化的行程规划服务'}</p>
+          <h2 className="text-3xl font-bold mb-4">{t.routes.custom_title}</h2>
+          <p className="text-xl mb-8">{t.routes.custom_subtitle}</p>
           <button className="bg-white text-[#1B3A5C] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-            {t.routes?.custom_button || '定制专属行程'}
+            {t.routes.custom_button}
           </button>
         </div>
       </section>
