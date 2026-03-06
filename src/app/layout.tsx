@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
 import BackToTop from "@/components/BackToTop";
+import { LanguageProvider } from "@/i18n/LanguageContext";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const notoSansJP = Noto_Sans_JP({ subsets: ["latin"], variable: "--font-noto" });
@@ -22,13 +23,15 @@ export default function RootLayout({
   return (
     <html lang="ja" className={`${inter.variable} ${notoSansJP.variable}`}>
       <body className="font-sans">
-        <Navigation />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
-        <FloatingCTA />
-        <BackToTop />
+        <LanguageProvider>
+          <Navigation />
+          <main className="min-h-screen">
+            {children}
+          </main>
+          <Footer />
+          <FloatingCTA />
+          <BackToTop />
+        </LanguageProvider>
       </body>
     </html>
   );

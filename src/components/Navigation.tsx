@@ -2,9 +2,11 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { useTranslation } from '@/i18n/useTranslation';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t, language, setLanguage } = useTranslation();
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
@@ -23,26 +25,41 @@ export default function Navigation() {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-8">
-            <Link href="/services" className="text-gray-700 hover:text-primary transition-colors">服务项目</Link>
-            <Link href="/fleet" className="text-gray-700 hover:text-primary transition-colors">车型价格</Link>
-            <Link href="/routes" className="text-gray-700 hover:text-primary transition-colors">热门线路</Link>
-            <Link href="/faq" className="text-gray-700 hover:text-primary transition-colors">常见问题</Link>
-            <Link href="/about" className="text-gray-700 hover:text-primary transition-colors">关于我们</Link>
-            <Link href="/contact" className="text-gray-700 hover:text-primary transition-colors">联系我们</Link>
+            <Link href="/services" className="text-gray-700 hover:text-primary transition-colors">{t.nav.services}</Link>
+            <Link href="/fleet" className="text-gray-700 hover:text-primary transition-colors">{t.nav.fleet}</Link>
+            <Link href="/routes" className="text-gray-700 hover:text-primary transition-colors">{t.nav.routes}</Link>
+            <Link href="/faq" className="text-gray-700 hover:text-primary transition-colors">{t.nav.faq}</Link>
+            <Link href="/about" className="text-gray-700 hover:text-primary transition-colors">{t.nav.about}</Link>
+            <Link href="/contact" className="text-gray-700 hover:text-primary transition-colors">{t.nav.contact}</Link>
 
             {/* Language Switcher */}
             <div className="flex items-center space-x-2 border-l pl-4">
-              <button className="text-sm text-gray-600 hover:text-primary">中</button>
+              <button 
+                onClick={() => setLanguage('zh')}
+                className={`text-sm ${language === 'zh' ? 'text-primary font-bold' : 'text-gray-600 hover:text-primary'}`}
+              >
+                {t.nav.lang_zh}
+              </button>
               <span className="text-gray-400">|</span>
-              <button className="text-sm text-gray-600 hover:text-primary">日</button>
+              <button 
+                onClick={() => setLanguage('ja')}
+                className={`text-sm ${language === 'ja' ? 'text-primary font-bold' : 'text-gray-600 hover:text-primary'}`}
+              >
+                {t.nav.lang_ja}
+              </button>
               <span className="text-gray-400">|</span>
-              <button className="text-sm text-gray-600 hover:text-primary">EN</button>
+              <button 
+                onClick={() => setLanguage('en')}
+                className={`text-sm ${language === 'en' ? 'text-primary font-bold' : 'text-gray-600 hover:text-primary'}`}
+              >
+                {t.nav.lang_en}
+              </button>
             </div>
 
             {/* Contact Info */}
             <div className="flex items-center space-x-4 border-l pl-4">
-              <a href="tel:+81-11-XXX-XXXX" className="text-primary font-semibold">+81-11-XXX-XXXX</a>
-              <Link href="/contact" className="btn-primary">立即询价</Link>
+              <a href={`tel:${t.nav.phone}`} className="text-primary font-semibold">{t.nav.phone}</a>
+              <Link href="/contact" className="btn-primary">{t.nav.cta}</Link>
             </div>
           </div>
 
@@ -65,19 +82,34 @@ export default function Navigation() {
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t">
             <div className="flex flex-col space-y-4">
-              <Link href="/services" className="text-gray-700 hover:text-primary transition-colors">服务项目</Link>
-              <Link href="/fleet" className="text-gray-700 hover:text-primary transition-colors">车型价格</Link>
-              <Link href="/routes" className="text-gray-700 hover:text-primary transition-colors">热门线路</Link>
-              <Link href="/faq" className="text-gray-700 hover:text-primary transition-colors">常见问题</Link>
-              <Link href="/about" className="text-gray-700 hover:text-primary transition-colors">关于我们</Link>
-              <Link href="/contact" className="text-gray-700 hover:text-primary transition-colors">联系我们</Link>
+              <Link href="/services" className="text-gray-700 hover:text-primary transition-colors">{t.nav.services}</Link>
+              <Link href="/fleet" className="text-gray-700 hover:text-primary transition-colors">{t.nav.fleet}</Link>
+              <Link href="/routes" className="text-gray-700 hover:text-primary transition-colors">{t.nav.routes}</Link>
+              <Link href="/faq" className="text-gray-700 hover:text-primary transition-colors">{t.nav.faq}</Link>
+              <Link href="/about" className="text-gray-700 hover:text-primary transition-colors">{t.nav.about}</Link>
+              <Link href="/contact" className="text-gray-700 hover:text-primary transition-colors">{t.nav.contact}</Link>
               <div className="flex items-center space-x-4 pt-4 border-t">
-                <button className="text-sm text-gray-600">中</button>
-                <button className="text-sm text-gray-600">日</button>
-                <button className="text-sm text-gray-600">EN</button>
+                <button 
+                  onClick={() => setLanguage('zh')}
+                  className={`text-sm ${language === 'zh' ? 'text-primary font-bold' : 'text-gray-600'}`}
+                >
+                  {t.nav.lang_zh}
+                </button>
+                <button 
+                  onClick={() => setLanguage('ja')}
+                  className={`text-sm ${language === 'ja' ? 'text-primary font-bold' : 'text-gray-600'}`}
+                >
+                  {t.nav.lang_ja}
+                </button>
+                <button 
+                  onClick={() => setLanguage('en')}
+                  className={`text-sm ${language === 'en' ? 'text-primary font-bold' : 'text-gray-600'}`}
+                >
+                  {t.nav.lang_en}
+                </button>
               </div>
-              <a href="tel:+81-11-XXX-XXXX" className="text-primary font-semibold">+81-11-XXX-XXXX</a>
-              <Link href="/contact" className="btn-primary text-center">立即询价</Link>
+              <a href={`tel:${t.nav.phone}`} className="text-primary font-semibold">{t.nav.phone}</a>
+              <Link href="/contact" className="btn-primary text-center">{t.nav.cta}</Link>
             </div>
           </div>
         )}

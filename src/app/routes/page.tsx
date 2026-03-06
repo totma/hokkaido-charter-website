@@ -1,4 +1,10 @@
+'use client';
+
+import { useTranslation } from '@/i18n/useTranslation';
+
 export default function RoutesPage() {
+  const { t } = useTranslation();
+
   const routes = [
     {
       name: '札幌市内观光',
@@ -55,8 +61,8 @@ export default function RoutesPage() {
       {/* Hero */}
       <section className="bg-gradient-to-r from-[#1B3A5C] to-[#2C5282] text-white py-20">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">热门线路</h1>
-          <p className="text-xl opacity-90">精选北海道经典路线，专业司机带您深度游览</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.routes?.page_title || '热门线路'}</h1>
+          <p className="text-xl opacity-90">{t.routes?.page_subtitle || '精选北海道经典路线，专业司机带您深度游览'}</p>
         </div>
       </section>
 
@@ -77,15 +83,15 @@ export default function RoutesPage() {
                     <span className="text-gray-600 text-sm">{route.season}</span>
                   </div>
                   <div className="mb-4">
-                    <span className="font-semibold">时长：</span>{route.duration}
+                    <span className="font-semibold">{t.routes?.duration || '时长'}：</span>{route.duration}
                   </div>
                   <div className="mb-4">
-                    <span className="font-semibold">主要景点：</span>
+                    <span className="font-semibold">{t.routes?.highlights || '主要景点'}：</span>
                     <p className="text-gray-600 mt-1">{route.highlights}</p>
                   </div>
                   <div className="text-2xl font-bold text-[#1B3A5C] mb-4">{route.price}</div>
                   <button className="w-full bg-[#1B3A5C] text-white py-2 rounded-lg hover:bg-[#2C5282] transition">
-                    查看详情
+                    {t.home?.view_details || '查看详情'}
                   </button>
                 </div>
               </div>
@@ -97,10 +103,10 @@ export default function RoutesPage() {
       {/* Custom Route CTA */}
       <section className="bg-gradient-to-r from-[#C4A35A] to-[#D4B36A] py-16">
         <div className="container mx-auto px-4 text-center text-white">
-          <h2 className="text-3xl font-bold mb-4">没有找到合适的线路？</h2>
-          <p className="text-xl mb-8">我们提供完全定制化的行程规划服务</p>
+          <h2 className="text-3xl font-bold mb-4">{t.routes?.custom_title || '没有找到合适的线路？'}</h2>
+          <p className="text-xl mb-8">{t.routes?.custom_subtitle || '我们提供完全定制化的行程规划服务'}</p>
           <button className="bg-white text-[#1B3A5C] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-            定制专属行程
+            {t.routes?.custom_button || '定制专属行程'}
           </button>
         </div>
       </section>
