@@ -68,10 +68,10 @@ export default function FAQPage() {
                   {category.questions.map((item, qIdx) => (
                     <div key={qIdx} className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition">
                       <h3 className="font-bold text-lg mb-3 text-[#1B3A5C]">
-                        Q: {item.q}
+                        {t.faq.question_prefix} {item.q}
                       </h3>
                       <p className="text-gray-700 leading-relaxed">
-                        A: {item.a}
+                        {t.faq.answer_prefix} {item.a}
                       </p>
                     </div>
                   ))}

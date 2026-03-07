@@ -111,7 +111,7 @@ export default function VIPPage() {
           <p className="text-xl mb-8 text-gray-200">{t.vip.cta_subtitle}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="btn-accent">{t.vip.cta_contact}</Link>
-            <a href="tel:+81-11-XXX-XXXX" className="bg-white hover:bg-gray-100 text-primary font-semibold py-3 px-6 rounded-lg transition-colors">{t.vip.cta_call}</a>
+            <a href={`tel:${t.vip.contact_phone}`} className="bg-white hover:bg-gray-100 text-primary font-semibold py-3 px-6 rounded-lg transition-colors">{t.vip.cta_call}</a>
           </div>
         </div>
       </section>

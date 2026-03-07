@@ -249,7 +249,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
             {[...Array(6)].map((_, idx) => (
               <div key={idx} className="flex items-center justify-center h-24 bg-gray-100 rounded-lg">
-                <span className="text-gray-400 font-bold">LOGO</span>
+                <span className="text-gray-400 font-bold">{t.common.brand_logo_placeholder}</span>
               </div>
             ))}
           </div>

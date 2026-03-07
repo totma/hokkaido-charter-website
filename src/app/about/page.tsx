@@ -142,7 +142,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
                 <div key={i} className="bg-gray-100 h-24 rounded-lg flex items-center justify-center text-gray-400 font-semibold">
-                  Partner {i}
+                  {t.about.partner_name.replace('{{number}}', String(i))}
                 </div>
               ))}
             </div>

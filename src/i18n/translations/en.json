@@ -12,11 +12,13 @@
     "lang_ja": "日",
     "lang_en": "EN",
     "brand_title": "Hokkaido Premium Travel",
-    "brand_subtitle": "Hokkaido Premium Travel"
+    "brand_subtitle": "Hokkaido Premium Travel",
+    "brand_logo": "北"
   },
   "common": {
     "partner_label": "Partner",
     "logo_placeholder": "LOGO",
+    "brand_logo_placeholder": "LOGO",
     "map_placeholder": "Map placeholder area",
     "back_to_top": "Back to top",
     "service_features": "Service Features",
@@ -190,6 +192,12 @@
     "suitable_for_photo": "Photographers, couples, families, and content creators",
     "vehicles_available": "Available Vehicles",
     "price_from": "From",
+    "airport_price_from": "From ¥8,000",
+    "sightseeing_price_from": "From ¥25,000",
+    "vip_price_from": "From ¥35,000",
+    "ski_price_from": "From ¥30,000",
+    "custom_price_from": "Custom quote",
+    "photo_price_from": "From ¥28,000",
     "details": "Learn More",
     "guarantee_title": "Service Guarantee",
     "guarantee_subtitle": "Professional team provides quality service",
@@ -433,7 +441,11 @@
         "participants": "30 participants",
         "date": "January 2024",
         "comment": "They provided three vehicles for our company’s annual team-building event. Drivers were punctual and professional, vehicles were clean and comfortable, and the itinerary was handled very smoothly. Our staff were very satisfied.",
-        "services": ["Business Reception", "Group Charter", "Custom Itinerary"]
+        "services": [
+          "Business Reception",
+          "Group Charter",
+          "Custom Itinerary"
+        ]
       },
       {
         "company": "XX International Conference",
@@ -441,7 +453,11 @@
         "participants": "50 participants",
         "date": "November 2023",
         "comment": "They handled airport transfers and conference transportation for an international event. Service was highly professional, on-time performance was 100%, and communication with multilingual drivers was smooth.",
-        "services": ["Airport Transfer", "VIP Reception", "Multilingual Service"]
+        "services": [
+          "Airport Transfer",
+          "VIP Reception",
+          "Multilingual Service"
+        ]
       },
       {
         "company": "XX Travel Agency",
@@ -449,14 +465,30 @@
         "participants": "Long-term cooperation",
         "date": "Since 2020",
         "comment": "As our long-term partner in Hokkaido, they consistently provide stable and reliable charter service. Their fleet is large, vehicle options are diverse, and service quality remains consistently high.",
-        "services": ["Group Charter", "Custom Itinerary", "Long-Term Cooperation"]
+        "services": [
+          "Group Charter",
+          "Custom Itinerary",
+          "Long-Term Cooperation"
+        ]
       }
     ],
     "stats": [
-      { "value": "5000+", "label": "Customers Served" },
-      { "value": "98%", "label": "Satisfaction Rate" },
-      { "value": "9 Years", "label": "Service Experience" },
-      { "value": "100%", "label": "On-Time Rate" }
+      {
+        "value": "5000+",
+        "label": "Customers Served"
+      },
+      {
+        "value": "98%",
+        "label": "Satisfaction Rate"
+      },
+      {
+        "value": "9 Years",
+        "label": "Service Experience"
+      },
+      {
+        "value": "100%",
+        "label": "On-Time Rate"
+      }
     ],
     "cta_title": "Be Our Next Happy Customer",
     "cta_subtitle": "Book now and experience professional service",
@@ -468,10 +500,26 @@
     "page_subtitle": "Professional transfers for New Chitose and Asahikawa airports, punctual and reliable for peace of mind",
     "service_features_title": "Service Features",
     "service_features": [
-      { "title": "24-Hour Service", "desc": "Transfers available around the clock", "icon": "⏰" },
-      { "title": "Flight Tracking", "desc": "Real-time flight status monitoring", "icon": "📡" },
-      { "title": "Free Waiting", "desc": "No extra charge for delayed flights", "icon": "⏳" },
-      { "title": "Meet & Greet", "desc": "Professional sign pickup service", "icon": "🪧" }
+      {
+        "title": "24-Hour Service",
+        "desc": "Transfers available around the clock",
+        "icon": "⏰"
+      },
+      {
+        "title": "Flight Tracking",
+        "desc": "Real-time flight status monitoring",
+        "icon": "📡"
+      },
+      {
+        "title": "Free Waiting",
+        "desc": "No extra charge for delayed flights",
+        "icon": "⏳"
+      },
+      {
+        "title": "Meet & Greet",
+        "desc": "Professional sign pickup service",
+        "icon": "🪧"
+      }
     ],
     "airports_title": "Airports We Serve",
     "pickup_process_title": "Pickup Process:",
@@ -509,11 +557,36 @@
     "table_mpv": "Business MPV\n(5-7 pax)",
     "table_van": "Luxury Van\n(8-9 pax)",
     "pricing_rows": [
-      { "route": "New Chitose Airport → Sapporo City", "sedan": "¥8,000", "mpv": "¥12,000", "van": "¥18,000" },
-      { "route": "New Chitose Airport → Otaru", "sedan": "¥12,000", "mpv": "¥18,000", "van": "¥25,000" },
-      { "route": "New Chitose Airport → Niseko", "sedan": "¥25,000", "mpv": "¥35,000", "van": "¥45,000" },
-      { "route": "Asahikawa Airport → Asahikawa City", "sedan": "¥6,000", "mpv": "¥9,000", "van": "¥15,000" },
-      { "route": "Asahikawa Airport → Furano", "sedan": "¥15,000", "mpv": "¥22,000", "van": "¥30,000" }
+      {
+        "route": "New Chitose Airport → Sapporo City",
+        "sedan": "¥8,000",
+        "mpv": "¥12,000",
+        "van": "¥18,000"
+      },
+      {
+        "route": "New Chitose Airport → Otaru",
+        "sedan": "¥12,000",
+        "mpv": "¥18,000",
+        "van": "¥25,000"
+      },
+      {
+        "route": "New Chitose Airport → Niseko",
+        "sedan": "¥25,000",
+        "mpv": "¥35,000",
+        "van": "¥45,000"
+      },
+      {
+        "route": "Asahikawa Airport → Asahikawa City",
+        "sedan": "¥6,000",
+        "mpv": "¥9,000",
+        "van": "¥15,000"
+      },
+      {
+        "route": "Asahikawa Airport → Furano",
+        "sedan": "¥15,000",
+        "mpv": "¥22,000",
+        "van": "¥30,000"
+      }
     ],
     "price_notes_title": "Pricing Notes:",
     "price_notes": [
@@ -552,9 +625,24 @@
     "page_subtitle": "Customize your own itinerary and experience the beauty of Hokkaido in depth",
     "service_types_title": "Service Types",
     "service_types": [
-      { "title": "Day Charter", "duration": "8-10 hours", "price": "From ¥25,000", "desc": "Ideal for short stays with selected classic attractions" },
-      { "title": "Multi-Day Charter", "duration": "2-7 days", "price": "From ¥55,000", "desc": "In-depth travel with flexible scheduling" },
-      { "title": "Half-Day Charter", "duration": "4-6 hours", "price": "From ¥15,000", "desc": "Compact schedule for quick sightseeing" }
+      {
+        "title": "Day Charter",
+        "duration": "8-10 hours",
+        "price": "From ¥25,000",
+        "desc": "Ideal for short stays with selected classic attractions"
+      },
+      {
+        "title": "Multi-Day Charter",
+        "duration": "2-7 days",
+        "price": "From ¥55,000",
+        "desc": "In-depth travel with flexible scheduling"
+      },
+      {
+        "title": "Half-Day Charter",
+        "duration": "4-6 hours",
+        "price": "From ¥15,000",
+        "desc": "Compact schedule for quick sightseeing"
+      }
     ],
     "seasonal_title": "Seasonal Recommendations",
     "recommended_routes_label": "Recommended Routes:",
@@ -562,45 +650,131 @@
       {
         "season": "Spring (Apr-May)",
         "icon": "🌸",
-        "routes": ["Sapporo-Otaru Cherry Blossom Tour", "Hakodate Goryokaku Park", "Matsumae Park Sakura"],
+        "routes": [
+          "Sapporo-Otaru Cherry Blossom Tour",
+          "Hakodate Goryokaku Park",
+          "Matsumae Park Sakura"
+        ],
         "highlights": "Cherry blossoms in full bloom with pleasant weather"
       },
       {
         "season": "Summer (Jun-Aug)",
         "icon": "🌻",
-        "routes": ["Furano Lavender", "Biei Patchwork Road", "Shiretoko Peninsula"],
+        "routes": [
+          "Furano Lavender",
+          "Biei Patchwork Road",
+          "Shiretoko Peninsula"
+        ],
         "highlights": "Colorful flower fields and a perfect summer retreat"
       },
       {
         "season": "Autumn (Sep-Nov)",
         "icon": "🍁",
-        "routes": ["Jozankei Autumn Leaves", "Daisetsuzan National Park", "Sounkyo"],
+        "routes": [
+          "Jozankei Autumn Leaves",
+          "Daisetsuzan National Park",
+          "Sounkyo"
+        ],
         "highlights": "Mountain foliage and crisp autumn scenery"
       },
       {
         "season": "Winter (Dec-Mar)",
         "icon": "⛷️",
-        "routes": ["Niseko Ski Trip", "Sapporo Snow Festival", "Drift Ice Sightseeing"],
+        "routes": [
+          "Niseko Ski Trip",
+          "Sapporo Snow Festival",
+          "Drift Ice Sightseeing"
+        ],
         "highlights": "A snowy wonderland of winter experiences"
       }
     ],
     "popular_title": "Popular Routes",
     "popular_spots_label": "Main Attractions:",
     "popular_routes": [
-      { "name": "Sapporo-Otaru Day Tour", "time": "8 hours", "price": "¥25,000", "spots": ["Otaru Canal", "Music Box Museum", "Kitaichi Glass"] },
-      { "name": "Furano-Biei Flower Fields", "time": "10 hours", "price": "¥30,000", "spots": ["Farm Tomita", "Shikisai-no-Oka", "Blue Pond"] },
-      { "name": "Noboribetsu-Lake Toya Onsen", "time": "2 days", "price": "¥55,000", "spots": ["Noboribetsu Jigokudani", "Lake Toya", "Showa Shinzan"] },
-      { "name": "Hakodate Night View Tour", "time": "6 hours", "price": "¥20,000", "spots": ["Mount Hakodate", "Kanemori Warehouses", "Goryokaku"] },
-      { "name": "Asahiyama Zoo Tour", "time": "8 hours", "price": "¥28,000", "spots": ["Asahiyama Zoo", "Asahikawa Ramen Village", "Snow Museum"] },
-      { "name": "Eastern Hokkaido Three Lakes", "time": "3 days", "price": "¥85,000", "spots": ["Lake Akan", "Lake Mashu", "Lake Kussharo"] }
+      {
+        "name": "Sapporo-Otaru Day Tour",
+        "time": "8 hours",
+        "price": "¥25,000",
+        "spots": [
+          "Otaru Canal",
+          "Music Box Museum",
+          "Kitaichi Glass"
+        ]
+      },
+      {
+        "name": "Furano-Biei Flower Fields",
+        "time": "10 hours",
+        "price": "¥30,000",
+        "spots": [
+          "Farm Tomita",
+          "Shikisai-no-Oka",
+          "Blue Pond"
+        ]
+      },
+      {
+        "name": "Noboribetsu-Lake Toya Onsen",
+        "time": "2 days",
+        "price": "¥55,000",
+        "spots": [
+          "Noboribetsu Jigokudani",
+          "Lake Toya",
+          "Showa Shinzan"
+        ]
+      },
+      {
+        "name": "Hakodate Night View Tour",
+        "time": "6 hours",
+        "price": "¥20,000",
+        "spots": [
+          "Mount Hakodate",
+          "Kanemori Warehouses",
+          "Goryokaku"
+        ]
+      },
+      {
+        "name": "Asahiyama Zoo Tour",
+        "time": "8 hours",
+        "price": "¥28,000",
+        "spots": [
+          "Asahiyama Zoo",
+          "Asahikawa Ramen Village",
+          "Snow Museum"
+        ]
+      },
+      {
+        "name": "Eastern Hokkaido Three Lakes",
+        "time": "3 days",
+        "price": "¥85,000",
+        "spots": [
+          "Lake Akan",
+          "Lake Mashu",
+          "Lake Kussharo"
+        ]
+      }
     ],
     "view_details": "View Details",
     "features_title": "Service Features",
     "features": [
-      { "title": "Flexible Routes", "desc": "Adjust the itinerary to match your needs", "icon": "🗺️" },
-      { "title": "Chinese Guide", "desc": "Professional explanations and smooth communication", "icon": "🗣️" },
-      { "title": "Attraction Tips", "desc": "Hidden spots known by locals", "icon": "⭐" },
-      { "title": "Food Guidance", "desc": "Enjoy authentic Hokkaido cuisine", "icon": "🍜" }
+      {
+        "title": "Flexible Routes",
+        "desc": "Adjust the itinerary to match your needs",
+        "icon": "🗺️"
+      },
+      {
+        "title": "Chinese Guide",
+        "desc": "Professional explanations and smooth communication",
+        "icon": "🗣️"
+      },
+      {
+        "title": "Attraction Tips",
+        "desc": "Hidden spots known by locals",
+        "icon": "⭐"
+      },
+      {
+        "title": "Food Guidance",
+        "desc": "Enjoy authentic Hokkaido cuisine",
+        "icon": "🍜"
+      }
     ],
     "pricing_title": "Pricing Information",
     "includes_title": "Charter Fee Includes:",
@@ -634,46 +808,172 @@
     "page_subtitle": "Professional, efficient, and confidential transportation for corporate clients",
     "features_title": "VIP Service Features",
     "features": [
-      { "title": "Dedicated Driver", "desc": "Experienced business-class chauffeurs", "icon": "👨‍💼" },
-      { "title": "Luxury Vehicles", "desc": "High-end business vehicles", "icon": "🚗" },
-      { "title": "Confidentiality Agreement", "desc": "NDA signing available", "icon": "🔒" },
-      { "title": "Flexible Dispatch", "desc": "Quick response to schedule changes", "icon": "📱" }
+      {
+        "title": "Dedicated Driver",
+        "desc": "Experienced business-class chauffeurs",
+        "icon": "👨‍💼"
+      },
+      {
+        "title": "Luxury Vehicles",
+        "desc": "High-end business vehicles",
+        "icon": "🚗"
+      },
+      {
+        "title": "Confidentiality Agreement",
+        "desc": "NDA signing available",
+        "icon": "🔒"
+      },
+      {
+        "title": "Flexible Dispatch",
+        "desc": "Quick response to schedule changes",
+        "icon": "📱"
+      }
     ],
     "service_types_title": "Service Types",
     "service_contents_label": "Service Contents:",
     "service_types": [
-      { "title": "Corporate Reception", "desc": "Client reception, business visits, and factory tours", "features": ["Airport transfer", "Itinerary planning", "Multilingual service", "Business etiquette"], "price": "From ¥35,000/day" },
-      { "title": "Conference Transportation", "desc": "Meeting transfers, exhibition transport, and training shuttles", "features": ["Punctual service", "Centralized dispatch", "Multi-vehicle coordination", "Emergency planning"], "price": "From ¥30,000/day" },
-      { "title": "Business Inspection", "desc": "Corporate visits, market research, and project inspections", "features": ["Custom routes", "Professional interpretation", "Business assistant", "Document preparation"], "price": "From ¥40,000/day" },
-      { "title": "Long-Term Charter", "desc": "Monthly, quarterly, or yearly vehicle service", "features": ["Dedicated driver", "Discounted pricing", "Priority dispatch", "Exclusive service"], "price": "Price on request" }
+      {
+        "title": "Corporate Reception",
+        "desc": "Client reception, business visits, and factory tours",
+        "features": [
+          "Airport transfer",
+          "Itinerary planning",
+          "Multilingual service",
+          "Business etiquette"
+        ],
+        "price": "From ¥35,000/day"
+      },
+      {
+        "title": "Conference Transportation",
+        "desc": "Meeting transfers, exhibition transport, and training shuttles",
+        "features": [
+          "Punctual service",
+          "Centralized dispatch",
+          "Multi-vehicle coordination",
+          "Emergency planning"
+        ],
+        "price": "From ¥30,000/day"
+      },
+      {
+        "title": "Business Inspection",
+        "desc": "Corporate visits, market research, and project inspections",
+        "features": [
+          "Custom routes",
+          "Professional interpretation",
+          "Business assistant",
+          "Document preparation"
+        ],
+        "price": "From ¥40,000/day"
+      },
+      {
+        "title": "Long-Term Charter",
+        "desc": "Monthly, quarterly, or yearly vehicle service",
+        "features": [
+          "Dedicated driver",
+          "Discounted pricing",
+          "Priority dispatch",
+          "Exclusive service"
+        ],
+        "price": "Price on request"
+      }
     ],
     "vehicles_title": "VIP Vehicles",
     "vehicle_config_label": "Features:",
     "vehicles": [
-      { "name": "Luxury Sedan", "model": "Lexus LS / Mercedes S-Class", "seats": "1-3 passengers", "features": ["Leather seats", "Rear entertainment", "Privacy glass", "Business amenities"], "price": "¥35,000/day" },
-      { "name": "Business MPV", "model": "Toyota Alphard / Vellfire", "seats": "4-6 passengers", "features": ["Executive seats", "Power sliding door", "Onboard Wi-Fi", "Refrigerator"], "price": "¥40,000/day" },
-      { "name": "Luxury Van", "model": "Mercedes V-Class", "seats": "7-8 passengers", "features": ["Premium interior", "Conference table", "Business facilities", "Sound insulation"], "price": "¥50,000/day" }
+      {
+        "name": "Luxury Sedan",
+        "model": "Lexus LS / Mercedes S-Class",
+        "seats": "1-3 passengers",
+        "features": [
+          "Leather seats",
+          "Rear entertainment",
+          "Privacy glass",
+          "Business amenities"
+        ],
+        "price": "¥35,000/day"
+      },
+      {
+        "name": "Business MPV",
+        "model": "Toyota Alphard / Vellfire",
+        "seats": "4-6 passengers",
+        "features": [
+          "Executive seats",
+          "Power sliding door",
+          "Onboard Wi-Fi",
+          "Refrigerator"
+        ],
+        "price": "¥40,000/day"
+      },
+      {
+        "name": "Luxury Van",
+        "model": "Mercedes V-Class",
+        "seats": "7-8 passengers",
+        "features": [
+          "Premium interior",
+          "Conference table",
+          "Business facilities",
+          "Sound insulation"
+        ],
+        "price": "¥50,000/day"
+      }
     ],
     "case_studies_title": "Service Cases",
     "client_label": "Client:",
     "service_label": "Service:",
     "vehicles_label": "Vehicles:",
     "case_studies": [
-      { "title": "Annual Meeting Reception for a Multinational Company", "client": "Fortune Global 500 Enterprise", "service": "3-day conference transportation", "vehicles": "10 business MPVs", "feedback": "Professional service and efficient dispatch that earned high praise from the client." },
-      { "title": "Government Delegation Inspection Tour", "client": "Provincial government delegation", "service": "5-day business inspection", "vehicles": "Luxury fleet", "feedback": "High-quality drivers and attentive service completed the reception task successfully." },
-      { "title": "Long-Term Corporate Transportation", "client": "Japanese-invested company", "service": "Annual charter service", "vehicles": "Dedicated vehicles and drivers", "feedback": "Stable and reliable service that has made us a long-term business partner." },
-      { "title": "Transportation for an International Exhibition", "client": "Exhibition company", "service": "Transfers during the expo", "vehicles": "Mixed vehicle lineup", "feedback": "Handled changes flexibly and maintained punctual service to support a smooth event." }
+      {
+        "title": "Annual Meeting Reception for a Multinational Company",
+        "client": "Fortune Global 500 Enterprise",
+        "service": "3-day conference transportation",
+        "vehicles": "10 business MPVs",
+        "feedback": "Professional service and efficient dispatch that earned high praise from the client."
+      },
+      {
+        "title": "Government Delegation Inspection Tour",
+        "client": "Provincial government delegation",
+        "service": "5-day business inspection",
+        "vehicles": "Luxury fleet",
+        "feedback": "High-quality drivers and attentive service completed the reception task successfully."
+      },
+      {
+        "title": "Long-Term Corporate Transportation",
+        "client": "Japanese-invested company",
+        "service": "Annual charter service",
+        "vehicles": "Dedicated vehicles and drivers",
+        "feedback": "Stable and reliable service that has made us a long-term business partner."
+      },
+      {
+        "title": "Transportation for an International Exhibition",
+        "client": "Exhibition company",
+        "service": "Transfers during the expo",
+        "vehicles": "Mixed vehicle lineup",
+        "feedback": "Handled changes flexibly and maintained punctual service to support a smooth event."
+      }
     ],
     "why_choose_title": "Why Choose Us",
     "why_choose": [
-      { "title": "Professional Team", "desc": "Over 10 years of business transportation experience serving many well-known companies", "icon": "🏆" },
-      { "title": "Strict Management", "desc": "Drivers receive professional training, wear uniform attire, and follow service standards", "icon": "📋" },
-      { "title": "Emergency Support", "desc": "24-hour standby service and backup vehicles ensure nothing is left to chance", "icon": "🚨" }
+      {
+        "title": "Professional Team",
+        "desc": "Over 10 years of business transportation experience serving many well-known companies",
+        "icon": "🏆"
+      },
+      {
+        "title": "Strict Management",
+        "desc": "Drivers receive professional training, wear uniform attire, and follow service standards",
+        "icon": "📋"
+      },
+      {
+        "title": "Emergency Support",
+        "desc": "24-hour standby service and backup vehicles ensure nothing is left to chance",
+        "icon": "🚨"
+      }
     ],
     "cta_title": "Ask About Business VIP Service",
     "cta_subtitle": "Our professional consultants will create a customized business transportation plan for you",
     "cta_contact": "Contact Us Now",
-    "cta_call": "Call Us"
+    "cta_call": "Call Us",
+    "contact_phone": "+81-11-XXX-XXXX"
   },
   "route_detail": {
     "routes": {
@@ -683,13 +983,41 @@
         "season": "Year-round",
         "price": "From ¥35,000",
         "itinerary": [
-          { "time": "09:00", "location": "Hotel Pickup", "description": "Driver arrives at your hotel on time" },
-          { "time": "09:30", "location": "Clock Tower", "description": "A landmark of Sapporo, perfect for photos" },
-          { "time": "10:00", "location": "Odori Park", "description": "Central city greenery with scenery in every season" },
-          { "time": "11:30", "location": "Shiroi Koibito Park", "description": "Visit the factory and enjoy sweets" },
-          { "time": "13:00", "location": "Lunch Time", "description": "Recommended local specialty restaurant" },
-          { "time": "14:30", "location": "Outer Market", "description": "Fresh seafood and a shopper’s paradise" },
-          { "time": "15:30", "location": "Return to Hotel", "description": "End of a wonderful day" }
+          {
+            "time": "09:00",
+            "location": "Hotel Pickup",
+            "description": "Driver arrives at your hotel on time"
+          },
+          {
+            "time": "09:30",
+            "location": "Clock Tower",
+            "description": "A landmark of Sapporo, perfect for photos"
+          },
+          {
+            "time": "10:00",
+            "location": "Odori Park",
+            "description": "Central city greenery with scenery in every season"
+          },
+          {
+            "time": "11:30",
+            "location": "Shiroi Koibito Park",
+            "description": "Visit the factory and enjoy sweets"
+          },
+          {
+            "time": "13:00",
+            "location": "Lunch Time",
+            "description": "Recommended local specialty restaurant"
+          },
+          {
+            "time": "14:30",
+            "location": "Outer Market",
+            "description": "Fresh seafood and a shopper’s paradise"
+          },
+          {
+            "time": "15:30",
+            "location": "Return to Hotel",
+            "description": "End of a wonderful day"
+          }
         ],
         "notes": [
           "Price includes: 6-hour charter fee, driver service fee, and vehicle insurance",
@@ -704,13 +1032,41 @@
         "season": "Year-round",
         "price": "From ¥45,000",
         "itinerary": [
-          { "time": "08:30", "location": "Hotel Pickup", "description": "Depart from Sapporo" },
-          { "time": "09:30", "location": "Otaru Canal", "description": "Romantic canal scenery" },
-          { "time": "10:30", "location": "Sakaimachi Street", "description": "Glass craft shopping street" },
-          { "time": "12:00", "location": "Lunch", "description": "Enjoy Otaru sushi" },
-          { "time": "13:30", "location": "Kitaichi Glass", "description": "Beautiful glassware and crafts" },
-          { "time": "15:00", "location": "Mount Tengu", "description": "Panoramic view over Otaru" },
-          { "time": "16:30", "location": "Return to Sapporo", "description": "End of the itinerary" }
+          {
+            "time": "08:30",
+            "location": "Hotel Pickup",
+            "description": "Depart from Sapporo"
+          },
+          {
+            "time": "09:30",
+            "location": "Otaru Canal",
+            "description": "Romantic canal scenery"
+          },
+          {
+            "time": "10:30",
+            "location": "Sakaimachi Street",
+            "description": "Glass craft shopping street"
+          },
+          {
+            "time": "12:00",
+            "location": "Lunch",
+            "description": "Enjoy Otaru sushi"
+          },
+          {
+            "time": "13:30",
+            "location": "Kitaichi Glass",
+            "description": "Beautiful glassware and crafts"
+          },
+          {
+            "time": "15:00",
+            "location": "Mount Tengu",
+            "description": "Panoramic view over Otaru"
+          },
+          {
+            "time": "16:30",
+            "location": "Return to Sapporo",
+            "description": "End of the itinerary"
+          }
         ],
         "notes": [
           "Price includes: 8-hour charter fee, expressway tolls, and driver service fee",
@@ -732,6 +1088,8 @@
   "faq": {
     "page_title": "FAQ",
     "page_subtitle": "Quickly find answers to your questions",
+    "question_prefix": "Q:",
+    "answer_prefix": "A:",
     "cat_booking": "Booking & Fees",
     "cat_cancel": "Cancellation & Changes",
     "cat_language": "Language & Communication",
@@ -814,6 +1172,7 @@
     "team_cs_5": "Attentive after-sales support",
     "partners_title": "Partners",
     "partners_desc": "We maintain long-term partnerships with well-known hotels, travel agencies, and companies.",
+    "partner_name": "Partner {{number}}",
     "cta_title": "Choose Us and Start a Wonderful Journey",
     "cta_subtitle": "A professional team serving every customer with care",
     "cta_button": "Contact Now"
@@ -840,6 +1199,8 @@
     "email_reply": "Reply within 24 hours",
     "im_title": "Instant Messaging",
     "line_id": "LINE ID: @hokkaido-charter",
+    "channel_whatsapp": "WhatsApp",
+    "channel_wechat": "WeChat",
     "whatsapp": "WhatsApp: +81-XX-XXXX-XXXX",
     "wechat": "WeChat: HokkaidoCharter",
     "address_title": "Address",
@@ -852,7 +1213,8 @@
     "hours_weekend_time": "9:00 - 21:00",
     "hours_emergency": "Emergency Contact",
     "hours_emergency_time": "24/7 Online",
-    "booking_tip": "Tip: We recommend booking 3-7 days in advance. During peak seasons (Jul-Aug, Dec-Feb), please book at least 2 weeks ahead."
+    "booking_tip": "Tip: We recommend booking 3-7 days in advance. During peak seasons (Jul-Aug, Dec-Feb), please book at least 2 weeks ahead.",
+    "channel_line": "LINE"
   },
   "footer": {
     "company_name": "Hokkaido Premium Travel",
@@ -879,10 +1241,14 @@
     "contact_whatsapp": "WhatsApp: +81-XX-XXXX-XXXX",
     "contact_wechat": "WeChat: HokkaidoPremium",
     "license": "General Passenger Automobile Transportation Business - Licensed by Hokkaido Transport Bureau No. XXXX",
-    "copyright": "© 2024 Hokkaido Premium Travel Co., Ltd. All Rights Reserved."
+    "copyright": "© 2024 Hokkaido Premium Travel Co., Ltd. All Rights Reserved.",
+    "social_facebook": "Facebook",
+    "social_instagram": "Instagram",
+    "social_x": "X"
   },
   "meta": {
     "site_title": "Hokkaido Premium Travel - Safe, Secure & Comfortable Hokkaido Charter Service",
-    "site_description": "Professional Hokkaido charter service for airport transfers, sightseeing charters, and business VIP travel. Multilingual drivers, transparent pricing, and licensed operation."
+    "description": "Professional Hokkaido charter service for airport transfers, sightseeing charters, and business VIP travel. Multilingual drivers, transparent pricing, and licensed operation.",
+    "title": "Hokkaido Premium Travel - Safe, Secure & Comfortable Hokkaido Charter Service"
   }
 }

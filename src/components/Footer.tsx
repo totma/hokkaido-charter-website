@@ -59,13 +59,13 @@ export default function Footer() {
             </div>
             <div className="flex space-x-4 mt-6">
               <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors">
-                <span className="text-sm">FB</span>
+                <span className="text-sm">{t.footer.social_facebook}</span>
               </a>
               <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors">
-                <span className="text-sm">IG</span>
+                <span className="text-sm">{t.footer.social_instagram}</span>
               </a>
               <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors">
-                <span className="text-sm">X</span>
+                <span className="text-sm">{t.footer.social_x}</span>
               </a>
             </div>
           </div>

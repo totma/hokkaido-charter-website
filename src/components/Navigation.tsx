@@ -14,7 +14,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center space-x-2">
             <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">北</span>
+              <span className="text-white font-bold text-xl">{t.nav.brand_logo}</span>
             </div>
             <div className="hidden md:block">
               <div className="text-primary font-bold text-lg">{t.nav.brand_title}</div>
